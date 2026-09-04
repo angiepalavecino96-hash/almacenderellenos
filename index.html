@@ -78,31 +78,28 @@
     gap: 12px;
   }
   .brand .mark {
-    width: 42px; height: 42px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
     flex: none;
     display: block;
-  }
-
-  /* Header logo: a little larger and rendered from the original asset so the
-     lettering inside the circular mark stays as clear as possible. */
-  header.site .brand .mark {
-    width: 58px;
-    height: 58px;
-    object-fit: contain;
     filter: none;
     transform: none;
-  }
-  @media (max-width: 720px) {
-    header.site .brand .mark { width: 52px; height: 52px; }
+    image-rendering: auto;
   }
   .brand-text { display: flex; flex-direction: column; line-height: 1.2; }
   .brand-text .name {
-    font-family: "Fraunces", serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-weight: 700;
-    font-size: 1.02rem;
+    font-size: 1.05rem;
     color: var(--ink);
+    text-shadow: none;
+    filter: none;
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
   .brand-text .tag {
     font-size: 0.66rem;
@@ -110,6 +107,9 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--gold);
+    text-shadow: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   .nav-links {
     display: flex;
