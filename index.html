@@ -84,6 +84,19 @@
     flex: none;
     display: block;
   }
+
+  /* Header logo: a little larger and rendered from the original asset so the
+     lettering inside the circular mark stays as clear as possible. */
+  header.site .brand .mark {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    filter: none;
+    transform: none;
+  }
+  @media (max-width: 720px) {
+    header.site .brand .mark { width: 52px; height: 52px; }
+  }
   .brand-text { display: flex; flex-direction: column; line-height: 1.2; }
   .brand-text .name {
     font-family: "Fraunces", serif;
