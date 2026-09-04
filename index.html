@@ -77,6 +77,20 @@
     align-items: center;
     gap: 12px;
   }
+  .brand-lockup {
+    width: 310px;
+    height: 60px;
+    object-fit: contain;
+    object-position: left center;
+    display: block;
+    flex: none;
+  }
+  @media (max-width: 640px) {
+    .brand-lockup {
+      width: 235px;
+      height: 52px;
+    }
+  }
   .brand .mark {
     width: 52px;
     height: 52px;
@@ -1023,11 +1037,7 @@
 <header class="site">
   <div class="nav">
     <div class="brand">
-      <img class="mark" src="assets/logo-almacen-rellenos.jpg" alt="Logo Almacén de Rellenos">
-      <div class="brand-text">
-        <span class="name">Almacén de Rellenos</span>
-        <span class="tag">Cocina profesional</span>
-      </div>
+      <img class="brand-lockup" src="assets/marca-cabecera-almacen.png" alt="Almacén de Rellenos · Cocina profesional">
     </div>
     <nav class="nav-links" id="navLinks">
       <a href="#nosotros">Nosotros</a>
